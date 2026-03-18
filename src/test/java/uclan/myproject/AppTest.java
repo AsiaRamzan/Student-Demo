@@ -1,15 +1,16 @@
 package uclan.myproject;
 
 
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+import uclan.myproject.App;
 
 
 public class AppTest {
 	  @Test
 	    void testGreeting() {
-	        assertEquals("Hello CI/CD", App.greet());
+		  App app = new App();
+	        assertEquals("Hello CI/CD", app.greet());
 	    }
 
     
